@@ -1,0 +1,50 @@
+[
+    {
+        "title":"What is MongoDB?",
+         "options":["A programming language",
+         "An operating system",
+         "A database management system",
+         "A web server " ],
+         "answer":"C"
+    
+    },
+    
+    {
+         "title":"Which component of the MEAN stack is a JavaScript runtime built on Chrome's V8 engine?",
+         "options":["MongoDB",
+                    "Express.js",
+                    "Angular",
+                    "Node.js" ],
+          "answer":"D"
+        
+    },
+    
+    {
+          "title":"What is the purpose of the ng build command in Angular?",
+          "options":["It compiles TypeScript code into JavaScript and bundles the application for deployment.",
+                     "It initializes a new Angular project in the current directory.",
+                     "It starts the Angular development server and launches the application in the browser.",
+                     "It installs the necessary dependencies for an Angular project."],
+          "answer": "A"
+    },
+    
+    {
+           "title":"Which command is commonly used to start a new Express.js project using the MEAN stack?",
+           "options":["npm new express",
+                      "express create myapp",
+                      "npm init express myapp",
+                      "express-generator myapp"  ],
+           "answer":"D"
+    
+    },
+    {
+            "title":"In the context of the MEAN stack, what does the term 'Angular CLI' refer to?",
+            "options":["A command-line tool for generating Angular components and services",
+                       "A command-line tool for interacting with MongoDB",
+                       "A command-line tool for setting up Express.js middleware",
+                       "A command-line tool for managing Node.js packages" ],
+            "answer":"A"
+    
+    }
+    
+    ]

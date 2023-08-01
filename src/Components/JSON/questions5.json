@@ -1,0 +1,50 @@
+[
+    {
+        "title":"Which of the following is an example of an Infrastructure as Code (IaC) tool?",
+         "options":["Jenkins",
+                    "Ansible",
+                    "Jira",
+                    "Selenium" ],
+         "answer":"B"
+    
+    },
+    
+    {
+         "title":"Which of the following practices focuses on reducing the time it takes to deliver new features or changes to production?",
+         "options":["Continuous Integration",
+                    "Continuous Deployment",
+                    "Continuous Delivery",
+                    "Continuous Monitoring " ],
+          "answer":"C"
+        
+    },
+    
+    {
+          "title":"What is the primary purpose of configuration management in DevOps?",
+          "options":["Managing infrastructure resources",
+                     "Automating software testing",
+                     "Tracking code changes",
+                     "Ensuring consistency and repeatability" ],
+          "answer": "D"
+    },
+    
+    {
+           "title":"What is the primary goal of continuous monitoring in DevOps?",
+           "options":["Ensuring high availability of applications",
+                      "Automating software deployment",
+                      "Managing infrastructure resources",
+                      "Optimizing code performance"       ],
+           "answer":"A"
+    
+    },
+    {
+            "title":"Which of the following is NOT a key principle of DevOps?",
+            "options":["Continuous Integration",
+                       "Infrastructure as Code",
+                       "Agile Development",
+                       "Waterfall Model "       ],
+            "answer":"D"
+    
+    }
+    
+    ]

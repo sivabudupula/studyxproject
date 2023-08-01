@@ -1,0 +1,210 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mean1{
+  font-family: 'calibri', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+.p-mean{
+  font-family: 'calibri', sans-serif;
+  font-size: 20px;
+}
+.butdm1{
+  font-size: 30px;
+  background-color: lightblue;
+  border-radius: 10px;
+  margin-left: 100px;
+  margin-top: 250px;
+  padding: 20px;
+}
+.butds1{
+  font-size: 30px;
+  background-color: lightblue;
+  border-radius: 10px;
+  margin-left: 100px;
+  margin-top: 250px;
+  padding: 20px;
+}
+
+.butdm1datascience{
+  font-size: 30px;
+  background-color: lightblue;
+  border-radius: 10px;
+  margin-left: 300px;
+  margin-top: 250px;
+  padding: 20px;
+}
+.butds1datascience{
+  font-size: 30px;
+  background-color: lightblue;
+  border-radius: 10px;
+  margin-left: 300px;
+  margin-top: 250px;
+  padding: 20px;
+}
+.digi{margin-left: 130px;}
+.d-head{margin-left: 100px;}
+.mean2{
+  margin-top:600px;
+  margin-right:600px;
+  font-weight: 500;
+  font-size: large  ;
+}
+
+.assignment{
+  display: flex;
+  flex-direction: row;
+  margin-left: 150px;
+}
+
+.assignmentheading{
+  display: inline-block;
+  height: auto;
+  border: 1px solid darkslategrey;
+  border-radius: 1px;
+  position: relative;
+  margin-left: 50px;
+  width:500px;
+  padding: 2px;
+  font-size: larger;
+}
+
+.assignmentnextheading{
+  display: inline-block;
+  height: auto;
+  border: 1px solid darkslategrey;
+  border-radius: 1px;
+  position: relative;
+  margin-left: 50px;
+  width:750px;
+  padding: 2px;
+  font-size: larger;
+}
+
+.assignment-container {
+  display: flex;
+  margin-top: 10px;
+  user-select: none;
+}
+
+.mainheading{
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-top: 10px;
+  color: blue;
+  margin-left: 20px;
+}
+.assignmentsubheading{
+  font-size: xx-large;
+  font-weight: bolder;
+
+
+  
+}
+
+.taskheading{
+  margin-top: 30px;
+  font-size: x-large;
+  font-weight: bolder;
+  color: red;
+  margin-left: 20px;
+
+}
+
+.assignmentsubmit{
+  background-color: blue;
+}
+
+.insidecontent{
+  margin-top: 30px;
+  font-size:large;
+  font-weight: bolder;
+  color: red;
+  margin-left: 20px;
+}
+
+
+.databutton{
+  font-size: 30px;
+  background-color: lightblue;
+  border-radius: 10px;
+  margin-left: 450px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.assignmentone{
+ 
+  font-size: large;
+  font-weight: bolder;
+  color: darkblue;
+  margin-left: 20px;
+}
+
+.optionsheading{
+  
+  font-size: large;
+  font-weight: bolder;
+  color: darkred;
+  margin-left: 20px;
+}
+
+.time-container {
+display: flex;
+align-items: center;
+position: fixed;
+top: 0;
+right: 0;
+margin-top: 25px;
+margin-right: 95px;
+}
+
+.timeLeft {
+color: limegreen;
+font-size: x-large;
+font-weight: bolder;
+}
+
+.time {
+margin-left: 10px;
+font-size: x-large;
+font-weight: bolder; /* Adjust the margin as needed */
+}
+

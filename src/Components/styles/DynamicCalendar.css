@@ -1,0 +1,238 @@
+/* Original styles */
+.calendar-container {
+  text-align: center;
+  background-color: #ececd9;
+  padding: 20px;
+  background-size: cover;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  background-color: #c7cf5bf4;
+  border-radius: 8px;
+}
+
+.day-names {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 8px;
+}
+
+.day-name {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.calendar {
+  justify-content: space-between;
+  border: 2px solid #ccc;
+  padding: 8px;
+  border-radius: 10px;
+  border-color: black;
+  margin: 10px;
+}
+
+.day {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-size: 26px;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  border-width: 2px;
+  border-color: rgb(18, 2, 6);
+  margin: 10px;
+}
+
+.day.other-month {
+  color: black;
+  background-color: #ccc;
+}
+
+.day.other-month-next {
+  color: white;
+  background-color: #ccc;
+}
+
+.day.selected.present {
+  background-color: green;
+  color: #fff;
+}
+
+.day.selected.absent {
+  background-color: red;
+  color: #fff;
+}
+
+.day.selected.holiday {
+  background-color: yellow;
+  color: black;
+}
+
+.day.selected {
+  background-color: white;
+  color: #000;
+}
+
+.day.today {
+  background-color: skyblue;
+}
+
+.day.present {
+  background-color: green;
+  color: #fff;
+}
+
+.day.absent {
+  background-color: red;
+  color: #fff;
+}
+
+.day.holiday {
+  background-color: yellow;
+  color: black;
+}
+
+.week {
+  display: flex;
+  flex-basis: calc(100% / 7);
+}
+
+.arrows {
+  border-width: 0px;
+  height: 44px;
+  width: 44px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 6px;
+ 
+}
+
+.attendance-input {
+  margin-top: 0px;
+  background-color: transparent;
+}
+
+.attendance-input label {
+  font-size: 15px;
+  font-weight: normal;
+  background-color: transparent;
+}
+
+.attendance-input select {
+  margin: 2px;
+  background-color: transparent;
+  padding: 6px 6px;
+  font-size: 15px;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+}
+.month-year-dropdown{
+  background-color: transparent;
+  font-family: "roboto";
+  font-size: 52px;
+  border-width: 0px;
+}
+.attendance-input-select-prev-nxt {
+  margin: 2px;
+  background-color: transparent;
+  padding: 6px 6px;
+  font-size: 15px;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+}
+
+.calendar-container {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.monthspadding {
+  font-family: "roboto";
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 40px;
+  border-width: 0px;
+  background-color: transparent;
+}
+
+.header button:first-child {
+  font-size: 30px;
+  padding: 8px;
+}
+
+.header button:last-child {
+  font-size: 30px;
+  padding: 8px;
+}
+
+/* Responsive styles */
+
+/* For small screens (mobile phones) */
+@media screen and (max-width: 767px) {
+  .monthspadding {
+    font-size: 28px;
+  }
+
+  
+  .day-name {
+    font-size: 18px;
+  }
+
+  .day {
+    font-size: 22px;
+  }
+
+  .attendance-input label {
+    font-size: 13px;
+  }
+
+  .attendance-input select {
+    font-size: 13px;
+  }
+}
+
+/* For medium screens (tablets) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .monthspadding {
+    font-size: 32px;
+  }
+
+  .arrows {
+    font-size: 28px;
+    height: 48px;
+    width: 48px;
+  }
+
+  .day-name {
+    font-size: 20px;
+  }
+
+  .day {
+    font-size: 24px;
+  }
+
+  .attendance-input label {
+    font-size: 15px;
+  }
+
+  .attendance-input select {
+    font-size: 15px;
+  }
+}
+
+/* For large screens (desktops and larger) */
+@media screen and (min-width: 1024px) {
+  /* No specific changes for large screens */
+}

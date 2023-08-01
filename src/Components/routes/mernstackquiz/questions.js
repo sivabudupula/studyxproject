@@ -1,0 +1,51 @@
+export const Quizdata =
+[
+    {
+        question:"Which of the following is a security vulnerability that occurs when a web application does not properly validate or sanitize user input?",
+         options:["Cross-site scripting (XSS)",
+                    "SQL injection",
+                    "Phishing",
+                    "Trojan horse " ],
+         answer:1
+    
+    },
+    
+    {
+         question:"What is the purpose of a firewall in network security?",
+         options:["To prevent unauthorized access to a network",
+                    "To encrypt network traffic",
+                    "To detect and remove malware from a network",
+                    "To authenticate users on a network "   ],
+          answer:1
+        
+    },
+    
+    {
+          question:"What is a common method used by hackers to gain unauthorized access to a system by exploiting a software vulnerability?",
+          options:["Phishing",
+                     "Social engineering",
+                     "Malware",
+                     "Exploit " ],
+          answer: 4
+    },
+    
+    {
+           question:"What is the term used to describe a security attack where an attacker attempts to guess a password by systematically trying all possible combinations?",
+           options:["Brute force attack",
+                      "Denial-of-Service (DoS) attack",
+                      "Man-in-the-Middle (MitM) attack",
+                      "SQL injection attack "         ],
+           answer:1
+    
+    },
+    {
+            question:"What is the main goal of a DDoS (Distributed Denial-of-Service) attack?",
+            options:["Gain unauthorized access to a system",
+                       "Steal sensitive information",
+                       "Disrupt or disable the targeted system or network",
+                       "Install malicious software on the victim's computer "      ],
+            answer:3
+    
+    }
+    
+    ]

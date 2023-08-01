@@ -1,0 +1,43 @@
+.form-container1{
+  width: 400px;
+  height: 550px;
+  
+  background-color:#EAFCFF;
+}
+.errmsg{
+  color: red;
+}
+.main-s{
+
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin-top: 60px;
+
+}
+
+.first-name{
+position: relative;
+right: 96px;
+padding-bottom: 7px;
+}
+.second-name{
+position: relative;
+right: 96px;
+padding-bottom: 7px;
+}
+.e-mail-sign-up{
+position: relative;
+right: 116px;
+padding-bottom: 7px;
+}
+.sign-up-password{
+position: relative;
+right: 101px;
+padding-bottom: 7px;
+}
+.sign-up-confirm-password{
+position: relative;
+right: 69px;
+padding-bottom: 7px;
+}

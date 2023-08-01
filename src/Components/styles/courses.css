@@ -1,0 +1,43 @@
+.main-section2{
+
+    }
+
+   
+
+.section1{
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color:#5579c6;
+    margin: 50px 35px 40px 45px;
+}
+.c-p{
+    margin-top: 30px;
+    
+    
+}
+a .pic{
+    width: 250px;
+    height: 200px;
+    
+    border-radius: 5px;
+    
+}
+/*.main-courses{
+    display: flex;
+    flex: row;
+    justify-content: start;
+    background-color: lightblue;
+}*/
+.main-section1{
+  
+    }
+.main-courses1{
+    background-color: lightcyan;
+    position: absolute;
+    left: 300px;
+    padding: 15px;
+}

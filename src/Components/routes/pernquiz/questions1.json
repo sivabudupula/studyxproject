@@ -1,0 +1,35 @@
+[
+    {
+        "title":"what command is used to manage different NodeJs versions?",
+         "options":["npm","node","nvs","js"],
+         "answer":"B"
+    
+    },
+    
+    {
+         "title":"Express is what?",
+         "options":["Back end frame work","front end frame work","both","none of these"],
+          "answer":"A"
+        
+    },
+    
+    {
+          "title":"Asynchronous funtions can trigger the callback of the catch part using what keyboard?",
+          "options":["return", "throw", "await", "wait"],
+          "answer": "C"
+    },
+    
+    {
+           "title":"Pern stack consists of how many components?",
+           "options":["3", "1", "2", "4"],
+           "answer":"D"
+    
+    },
+    {
+            "title":"React is what?",
+            "options":["front-end library", "Back-end frame work", "both","none of these"],
+            "answer":"A"
+    
+    }
+    
+    ]

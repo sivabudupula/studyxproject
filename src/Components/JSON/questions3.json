@@ -1,0 +1,50 @@
+[
+    {
+        "title":"What is the purpose of cross-validation in machine learning?",
+         "options":["To split the dataset into training and testing sets",
+         "To evaluate the performance of a model on unseen data",
+          "To handle missing values in the dataset",
+          "To select the optimal hyperparameters for a model" ],
+         "answer":"B"
+    
+    },
+    
+    {
+         "title":"Which algorithm is used for training deep neural networks with multiple layers?",
+         "options":["Logistic regression",
+         "Naive Bayes",
+         "Support Vector Machines (SVM)",
+         "Backpropagation algorithm "   ],
+          "answer":"D"
+        
+    },
+    
+    {
+          "title":"What is the purpose of the AUC-ROC curve in binary classification?",
+          "options":["To visualize the decision boundary of a classifier",
+          "To measure the balance between precision and recall",
+          "To compare the performance of different classifiers",
+          "To evaluate the performance of a classifier at various probability thresholds" ],
+          "answer": "C"
+    },
+    
+    {
+           "title":"Which algorithm is commonly used for collaborative filtering in recommendation systems?",
+           "options":["K-nearest neighbors (KNN)",
+           "Support Vector Machines (SVM)",
+            "Decision trees",
+            "Linear regression" ],
+           "answer":"A"
+    
+    },
+    {
+            "title":"What is the purpose of regularization techniques in machine learning?",
+            "options":["To reduce overfitting and improve model generalization",
+            "To increase model complexity and accuracy",
+            "To speed up the training process",
+            "To handle missing data in the dataset"],
+            "answer":"A"
+    
+    }
+    
+    ]

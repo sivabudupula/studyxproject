@@ -1,0 +1,50 @@
+[
+    {
+        "title":"What is the purpose of a landing page in digital marketing?",
+         "options":["To increase organic search rankings",
+                    "To display social media ads",
+                    "To capture leads and drive conversions",
+                    "To analyze website traffic and user behavior"  ],
+         "answer":"C"
+    
+    },
+    
+    {
+         "title":"Which platform is primarily used for professional networking and B2B marketing?",
+         "options":["Facebook",
+                    "Twitter",
+                    "LinkedIn",
+                    "Instagram " ],
+          "answer":"C"
+        
+    },
+    
+    {
+          "title":"What does the acronym 'SEO' stand for in digital marketing?",
+          "options":["Search Engine Optimization",
+                     "Social Engagement Optimization",
+                     "Search Engine Advertising",
+                     "Social Media Outreach"  ],
+          "answer": "A"
+    },
+    
+    {
+           "title":"What is the primary goal of content marketing in digital marketing strategies?",
+           "options":["To increase website traffic",
+                      "To drive social media engagement",
+                      "To generate sales and revenue",
+                      "To provide valuable and relevant content to the target audience"],
+           "answer":"D"
+    
+    },
+    {
+            "title":"Which metric measures the percentage of website visitors who leave a site after viewing only one page?",
+            "options":["Bounce rate",
+                       "Conversion rate",
+                       "Click-through rate (CTR)",
+                       "Return on Investment (ROI)"],
+            "answer":"A"
+    
+    }
+    
+    ]
