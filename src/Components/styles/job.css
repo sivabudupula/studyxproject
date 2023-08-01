@@ -3,6 +3,7 @@
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    width: 350px;
   }
   
   .view-button {
@@ -27,6 +28,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     cursor: pointer;
+    
+    margin-left: 300px;
   }
   /* 
   .jobs-button {

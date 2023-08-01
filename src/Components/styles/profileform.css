@@ -1,0 +1,124 @@
+.form-containerp {
+    width:100%;
+    
+    border-radius: 5px;
+    
+  }
+  
+  .form-containerp h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-groupp {
+    margin-bottom: 23px;
+    width: 100%;
+  }
+  
+  label {
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .formbody{
+    margin-left: 300px;
+
+   display: flex;
+   width:100%;
+  }
+  
+  input[type='text'],
+  input[type='email'],  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  select {
+    height: 38px;
+  }
+  
+  button[type='submit'] {
+    width: 40%;
+    padding: 10px;
+    background-color: #45a049;
+    color: rgb(14, 13, 13);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  button[type='submit']:hover {
+    background-color: green;
+    color: white;
+  }
+  
+  button[type='submit']:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .profilee {
+    margin-top: 20px;
+    margin-left: 200px;
+  }
+  
+  /* .profileimage {
+    position: relative;
+    bottom: 400px;
+    left: 600px;
+  } */
+  
+  
+  
+  /* Media query for mobile devices */
+  @media only screen and (max-width: 480px) {
+    .form-containerp {
+      margin-left: 5px; /* Adjust the margin for smaller screens */
+      padding: 10px; /* Adjust the padding for smaller screens */
+      max-width: 600px;
+      padding: 20px; 
+      border-radius: 5px;
+      margin-left: 50px;
+    }
+  
+    .profileimage {
+      display: none; /* Hide the profile image on small screens */
+    }
+  }
+  
+  .profile-image {
+    text-align: center;
+    color:rgba(66, 15, 169, 0.879);
+    margin-bottom: 20px;
+  }
+  
+  .profile-image img {
+    width: 200px;
+    height: 200px;
+  
+  }
+  
+  .profile-image label {
+    display: block;
+    margin-top: 10px;
+  }
+  .formbodyleft{
+    width: 40%;
+    padding-left: 20px;
+  }
+  .formbodyright{
+    width: 40%;
+    padding-left: 150px;
+    padding-top: 150px;
+  }

@@ -1,56 +1,65 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../styles/profileform.css'
+import { FaUserCircle} from "react-icons/fa";
+import Sidebar from './sidebar';
 
 const Profileform = ({ onLogin }) => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    designation: '',
-    performancestatus: '',
-    experience: '',
-    profilePic: null,
+    clientname:'',
+    email:'',
+    projectname:'',
+    status:'',
+    value:'',
   });
+  const [previewImage, setPreviewImage] = useState(null);
+  const handleProfileLogoChange = (e) => {
+    const file = e.target.files[0];
+    const reader = new FileReader();
+
+    reader.onloadend = () => {
+      setPreviewImage(reader.result);
+      // If you want to save the selected file as well, you can use 'file' variable here.
+    };
+
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+  }
 
   const [submitting, setSubmitting] = useState(false);
-  const [setError] = useState('');
 
   const handleChange = (e) => {
-    const { name, value, type, files } = e.target;
+    const { name, value } = e.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
-      [name]: type === 'file' ? files[0] : value,
+      [name]: value,
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    createMerchant();
-  };
-
-  const createMerchant = async () => {
     setSubmitting(true);
     try {
       const formDataToSubmit = new FormData();
-      formDataToSubmit.append('name', formData.name);
+      formDataToSubmit.append('clientname', formData.clientname);
       formDataToSubmit.append('email', formData.email);
-      formDataToSubmit.append('designation', formData.designation);
-      formDataToSubmit.append('performancestatus', formData.performancestatus);
-      formDataToSubmit.append('experience', formData.experience);
-      formDataToSubmit.append('profilePic', formData.profilePic);
+      formDataToSubmit.append('projectname', formData.projectname);
+      formDataToSubmit.append('status', formData.status);
+      formDataToSubmit.append('value', formData.value);
 
       const response = await axios.post(
-        'http://localhost:3001/profile_data',
-        formDataToSubmit,
-        {
+        'http://localhost:3001/profilee_data',
+        formDataToSubmit,        {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
         }
-      );
+      ); 
 
       console.log(response);
 
-      setError('');
+      window.alert('Data submitted successfully!');
       onLogin();
     } catch (error) {
       console.error(error);
@@ -58,189 +67,133 @@ const Profileform = ({ onLogin }) => {
       setSubmitting(false);
     }
   };
-
-  const main = {
-    backgroundImage:
-      'url("https:")',
+  const formbody = {
+    // backgroundImage: 'url("https://hbr.org/resources/images/article_assets/2014/02/Feb14_02_108315569.jpg")';
     backgroundSize: 'cover',
+    backgroundColor:'transparent',
     backgroundImageRepeat: 'no-repeat',
     minHeight: '100vh',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-  };
+    flexDirection: 'row',
+      
+    };
 
-  const formContainer = {
-    background: '#fff',
-    padding: '30px',
-    borderRadius: '10px',
-    boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)',
-    width:'60%',
-    backgroundColor:'rgb(226, 238, 245)',
-  };
-
-  const rowContainer = {
-    display: 'flex',
-    justifyContent:'space-evenly',
-    marginBottom: '20px',
-  };
-
-  const labelStyle = {
-    fontWeight: 'bold',
-    
-  };
-
-  const inputStyle = {
-    width: '300px',
-    padding: '5px',
-    height:'40px',
-    borderRadius: '5px',
-  };
-
-  const selectStyle = {
-    width: '300px',
-    padding: '5px',
-    height:'40px',
-    borderRadius: '5px',
-  };
-
-  const buttonStyle = {
-    backgroundColor: '#754b21',
-    border: 'none',
-    color: 'white',
-    padding: '10px 20px',
-    textAlign: 'center',
-    textDecoration: 'none',
-    display: 'inline-block',
-    fontSize: '16px',
-    borderRadius: '5px',
-    cursor: 'pointer',
-    width:'150px',
-    marginTop:'20px',
-    
-  };
-
-  const profilePicStyle = {
-    width: '120px',
-    height: '120px',
-    borderRadius: '60%',
-  };
+  
 
   return (
-    <div style={main}>
-      <div style={formContainer}>
-        <div style={{ paddingLeft:'30px',backgroundColor:'lightblue',borderRadius:'10px'}}>
-          <img
-            src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?size=626&ext=jpg&ga=GA1.1.1383546018.1689150791&semt=ais"
-            alt="Profile Pic"
-            style={profilePicStyle}
-            
-          />
-          <h2 style={{ textAlign: 'center', textDecoration: 'underline',paddingBottom:'20px' }}>Profile Form</h2>
-        </div>&nbsp;&nbsp;
-        
-        <form onSubmit={handleSubmit}>
-          <div style={rowContainer}>
-            <div>
-              <label htmlFor="name" style={labelStyle}>
-                Name*
-              </label>
-              <br />
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                style={inputStyle}
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="email" style={labelStyle}>
-                Email*
-              </label>
-              <br />
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                style={inputStyle}
-                required
-              />
-            </div>
-          </div>
-
-          <div style={rowContainer}>
-            <div>
-              <label htmlFor="designation" style={labelStyle}>
-                Designation*
-              </label>
-              <br />
-              <input
-                type="text"
-                id="designation"
-                name="designation"
-                value={formData.designation}
-                onChange={handleChange}
-                style={inputStyle}
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="performancestatus" style={labelStyle}>
-                Performance Status*
-              </label>
-              <br />
-              <select
-                id="performancestatus"
-                name="performancestatus"
-                value={formData.performancestatus}
-                onChange={handleChange}
-                style={selectStyle}
-                required
-              >
-                <option value="">Select Status</option>
-                <option value="excellent">Excellent</option>
-                <option value="good">Good</option>
-                <option value="fair">Fair</option>
-                <option value="poor">Poor</option>
-              </select>
-            </div>
-          </div>
-
-          <div style={{ paddingLeft:'34px',}}>
-            <div>
-              <label htmlFor="experience" style={labelStyle}>
-                Experience*
-              </label>
-              <br />
-              <input
-                type="text"
-                id="experience"
-                name="experience"
-                value={formData.experience}
-                onChange={handleChange}
-                style={inputStyle}
-                required
-              />
-            </div>
-          </div>
-
-        
-
-          <div style={{ paddingLeft:'34px',}}>
-            <button type="submit" disabled={submitting} style={buttonStyle}>
-              {submitting ? 'Saving...' : 'Save'}
-            </button>
-          </div>
-        </form>
-      </div>
+    <div>
+    <div>
+      <Sidebar/>
     </div>
-  );
-};
 
-export default Profileform;
+        <div className='formbody' style={formbody}>
+          <div className='formbodyleft'>
+            <div className="form-containerp">
+            <h2 className="profilee">Profile Form</h2>
+            <form onSubmit={handleSubmit}>
+                <div className="form-group">
+                <label htmlFor="name">Client Name*</label>
+                <input
+                    type="text"
+                    id="clientname"
+                    name="clientname"
+                    value={formData.clientname}
+                    onChange={handleChange}
+                    data-aos="fade-right"
+                    required
+                />
+                </div>
+    
+                <div className="form-groupp">
+                <label htmlFor="email">Email*</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    data-aos="fade-right"
+                    required
+                />
+                </div>
+    
+                <div className="form-groupp">
+                <label htmlFor="designation">Project Name*</label>
+                <input
+                    type="text"
+                    id="projectname"
+                    name="projectname"
+                    value={formData.projectname}
+                    onChange={handleChange}
+                    data-aos="fade-right"
+                    required
+                />
+                </div>
+    
+                <div className="form-groupp">
+                <label htmlFor="status">Status*</label>
+                <select
+                    id="status"
+                    name="status"
+                    value={formData.status}
+                    onChange={handleChange}
+                    data-aos="fade-right"
+                    required
+                 >
+                    <option value="">Select Status</option>
+                    <option value="excellent">Excellent</option>  
+                    <option value="good">Good</option>
+                    <option value="fair">Fair</option>
+                    <option value="poor">Poor</option>
+                </select>
+                </div>
+    
+                <div className="form-groupp">
+                <label htmlFor="experience">Value*</label>
+                <input
+                    type="text"
+                    id="value"
+                    name="value"
+                    value={formData.value}
+                    onChange={handleChange}
+                    data-aos="fade-right"
+                    required
+                />
+                </div>
+                
+                <div className="form-groupp">
+                <button type="submit" disabled={submitting} data-aos="fade-up">
+                    {submitting ? 'Submitting...' : 'Submit'}
+                </button>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div className='formbodyright'>
+                <div class="profileimage">
+                <form2 onSubmit={handleSubmit}>
+                    <div className="profile-image">
+                      {previewImage ? (
+                        <img src={previewImage} alt="Profile Preview" className="avatar img-circle" />
+                      ) : (
+                        <FaUserCircle size={'100px'} />
+                      )}
+                      <label>Upload your photo</label>
+                      <input
+                        type="file"
+                        accept="image/*"
+                        onChange={handleProfileLogoChange}
+                        required
+                      />
+                    </div>
+ 
+
+                    </form2>
+                          </div>
+                          </div>
+                      
+            </div>
+            </div>
+      );
+    };
+
+    export default Profileform;

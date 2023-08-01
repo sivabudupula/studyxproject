@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/job.css'
 import { useNavigate } from "react-router-dom";
+import Sidebar from "./sidebar";
 const Card = () => {
   const navigate = useNavigate();
 
@@ -69,6 +70,7 @@ const Card = () => {
   const Companies = ({ company }) => {
     return (
       <div className="card" >
+        
         <h3>{company.companyName}</h3>
         <p>Job Role: {company.jobRole}</p>
         <p>CTC: {company.ctc}</p>
@@ -80,6 +82,7 @@ const Card = () => {
 
   return (
     <div className="sidebar">
+      <Sidebar/>
       <div className="cards-container">
         {companies.map((company) => (
           <Companies key={company.id} company={company} />
