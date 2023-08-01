@@ -4,7 +4,7 @@ import '../styles/login.css'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import loginimage from '../Images/loginimage.jpg'
-
+import profile from '../Images/profile.jpg'
 function Login() { 
  const navigate=useNavigate(); 
  
@@ -52,7 +52,7 @@ const createLogin = async () => {
     <div className='login template d-flex justify-content-center align-item center vh-100 '>
       <div className='form-container p-5 rounded '>
         <form onSubmit={submitHandler} autoComplete='off'>
-        <img  className='l1' width={100} height={100} alt=''/>
+        <img src={profile} className='l1' width={100} height={100} alt=''/>
             <h5 className='text-center'>Log in</h5>
 <div className='mb-2'>
 <label htmlFor='email' className='input-login'>Email</label>

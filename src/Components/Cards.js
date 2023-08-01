@@ -7,6 +7,7 @@ import "./style.css";
 import { useDispatch } from "react-redux";
 import { ADD } from "./redux/actions/action";
 import { Outlet, Link } from "react-router-dom";
+import Sidebar from "./routes/sidebar";
 
 const Cards = () => {
   const [data, setData] = useState(Cardsdata);
@@ -20,9 +21,11 @@ const Cards = () => {
   };
 
   return (
-    <div className="container mt-3">
-      <Header/>
-      <h2 className="text-center">online courses</h2>
+    <div>
+      <Sidebar/>
+     <div className="container mt-3"> 
+        
+      <h2 className="text-container">online courses</h2>
 
       <div className="row d-flex justify-content-center align-items-center">
         {data.map((element, id) => {
@@ -75,6 +78,7 @@ const Cards = () => {
       </div>
       <Outlet />
     </div>
+    // </div>
   );
 };
 
