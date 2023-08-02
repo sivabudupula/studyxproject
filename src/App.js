@@ -46,6 +46,9 @@ import Artificalassignmenttwo from './Components/routes/artificalandmachine/Arti
 import Artificalassignmentthree from './Components/routes/artificalandmachine/Artificalassignmentthree';
 import Artificalassignmentfour from './Components/routes/artificalandmachine/Artificalassignmentfour';
 import Artificalassignmentfive from './Components/routes/artificalandmachine/Artificalassignmentfive';
+
+import Uiux from './Components/routes/ui/uiux';
+import Mernstack from './Components/routes/mern/mernstack';
 import MeanStack from './Components/routes/mean/meanstack';
 import App1 from './Components/routes/pernquiz/app1';
 import Buynow from './Components/routes/buynow';
@@ -59,6 +62,12 @@ import Meanstackquiz from './Components/routes/meanstackquiz/quiz';
 import DataSciencequiz from './Components/routes/datasciencequiz/quiz';
 import Artificialquiz from './Components/routes/artificialquiz/quiz';
 import Uiquiz from './Components/routes/uiquiz/quiz';
+import Mernstackquiz from './Components/routes/mernstackquiz/quiz';
+import MernstackMaincomponent from './Components/routes/mern/MernstackMainComponent';
+import MernAssignmentstwo from './Components/routes/mern/MernAssignmenttwo';
+import MernAssignmentsthree from './Components/routes/mern/MernAssignmentthree';
+import MernAssignmentsfour from './Components/routes/mern/MernAssignmentfour';
+import MernAssignmentsfive from './Components/routes/mern/Mernstackassignmentfive';
 function App() {
   return (
     <div className="App">
@@ -87,7 +96,11 @@ function App() {
           <Route path="/meanstackquiz" element={<Meanstackquiz/>}/> 
           <Route path="/datasciencequiz" element={<DataSciencequiz/>}/> 
           <Route path="/artificialquiz" element={<Artificialquiz/>}/> 
-          <Route path="/uiquiz" element={<Uiquiz/>}/> 
+          <Route path="/uiquiz" element={<Uiquiz/>}/>
+          <Route path='/mernstackquiz                                                                                                                                                                                                                                                                                   ' element={<Mernstackquiz/>}/> 
+          <Route path="/mernstack" element={<Mernstack/>}/>
+          
+          <Route path="/uiux"  element={<Uiux/>}/>
 
           <Route path="/forgotpassword" element={<ForgotPassword/>}/> 
 
@@ -227,6 +240,35 @@ function App() {
               <DigiQuizMainComponent />
             </DigiQuizTimerProvider>
           } />
+ <Route path="/Mernstack" element={<Mernstack/>}/> 
+           <Route path="/mernstackassignments" element={
+            <TimerProvider>
+              <MernstackMaincomponent />
+            </TimerProvider>
+          } />
+
+<Route path="/mernassignmenttwo" element={
+            <TimerProvider>
+              <MernAssignmentstwo />
+            </TimerProvider>
+          } />
+           <Route path="/mernassignmentthree" element={
+            <TimerProvider>
+              <MernAssignmentsthree />
+            </TimerProvider>
+          } />
+           <Route path="/mernassignmentfour" element={
+            <TimerProvider>
+              <MernAssignmentsfour />
+            </TimerProvider>
+          } />
+           <Route path="/mernassignmentfive" element={
+            <TimerProvider>
+              <MernAssignmentsfive />
+            </TimerProvider>
+          } />
+
+
 
         </Routes>
        

@@ -44,13 +44,13 @@ const CoursesAssignments = () => {
 <p>Artificalintelligence</p>
 </div>
 <div className='d1'>     
-<Link to='/'><img src={c6} alt='c2' className='c'/> </Link>
+<Link to='/mern'><img src={c6} alt='c2' className='c'/> </Link>
 <p>Machinelearning</p>
 </div>
 
 
 
-
+ 
     </div>
     </div>
   )

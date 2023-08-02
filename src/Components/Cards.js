@@ -22,7 +22,7 @@ const Cards = () => {
 
   return (
     <div>
-      <Sidebar/>
+      {/* <Sidebar/> */}
      <div className="container mt-3"> 
         
       <h2 className="text-container">online courses</h2>

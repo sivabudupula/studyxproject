@@ -50,12 +50,12 @@ const Courses = () => {
           </div>
 
           <div className='section1 col-sm-6 col-md-3'>
-          <Link to='/cybersecurity'> <a href='#'><img src={c7} alt='course1' className='pic'/></a></Link>
+          <Link to='/mernstack'> <a href='#'><img src={c7} alt='course1' className='pic'/></a></Link>
           <p className='c-p'>MERN Stack</p>
           </div>
 
           <div className='section1 col-sm-6 col-md-3'>
-          <Link to='/ui'> <a href='#'><img src={c6} alt='course1' className='pic'/></a></Link>
+          <Link to='/uiux'> <a href='#'><img src={c6} alt='course1' className='pic'/></a></Link>
           <p className='c-p'>UI/UX</p>
           </div>
         </div>
