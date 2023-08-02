@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/DynamicCalendar.css';
-import Sidebar from './sidebar';
+
 const DynamicCalendar = () => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedMonth, setSelectedMonth] = useState(new Date().getMonth());
@@ -191,12 +191,7 @@ const DynamicCalendar = () => {
   };
 
   return (
-    <div>
-    <div>
-      <Sidebar/>
-    </div>
-    <div className="calendar-container ">
-      
+    <div className="calendar-container shadow">
       <div className="header">
         <button className="arrows" onClick={handlePrevMonth}>
           &lt;
@@ -236,7 +231,6 @@ const DynamicCalendar = () => {
       </div>
       <div className="day-names">{renderDayNames()}</div>
       <div className="calendar">{renderCalendar()}</div>
-    </div>
     </div>
   );
 };

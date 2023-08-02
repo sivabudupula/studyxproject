@@ -18,7 +18,7 @@ const Sidebar = () => {
         <div className='main-sidebar'>
             <div className='s'>
             <aside>
-            <img src={logo}  className='logo1' width={150} height={150} alt='logo'/><hr className='h'/>
+            <img src={logo}  className='logo' width={100} height={100} alt='logo'/><hr className='h'/>
                
                <Link to="/Dashboard" className='L'><span><AiOutlineDashboard/></span>Dashboard</Link><hr className='h'/>
                <Link to="/courses" className='L'><span><MdMenuBook/></span>Courses</Link><hr className='h'/>
