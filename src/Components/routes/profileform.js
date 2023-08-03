@@ -3,6 +3,7 @@ import axios from 'axios';
 import '../styles/profileform.css'
 import { FaUserCircle} from "react-icons/fa";
 import Sidebar from './sidebar';
+import { width } from '@mui/system';
 
 const Profileform = ({ onLogin }) => {
   const [formData, setFormData] = useState({
@@ -68,12 +69,13 @@ const Profileform = ({ onLogin }) => {
     }
   };
   const formbody = {
-    // backgroundImage: 'url("https://hbr.org/resources/images/article_assets/2014/02/Feb14_02_108315569.jpg")';
+    backgroundImage: 'url("https://hbr.org/resources/images/article_assets/2014/02/Feb14_02_108315569.jpg")',
     backgroundSize: 'cover',
-    backgroundColor:'transparent',
+    
     backgroundImageRepeat: 'no-repeat',
     minHeight: '100vh',
     flexDirection: 'row',
+    
       
     };
 
@@ -90,7 +92,7 @@ const Profileform = ({ onLogin }) => {
             <div className="form-containerp">
             <h2 className="profilee">Profile Form</h2>
             <form onSubmit={handleSubmit}>
-                <div className="form-group">
+                <div className="form-groupp">
                 <label htmlFor="name">Client Name*</label>
                 <input
                     type="text"

@@ -76,9 +76,9 @@ const CardsDetails = ({ pricing }) => {
                       {/* {ele.video} */}
                    
                     {/* <div> */}/{/* </div> */}
-                    <br/>
+                    {/* <br/> */}
                               {/* Displaying the video player only if the video URL is provided */}
-      {ele.video && (
+      {/* {ele.video && (
         <ReactPlayer
           url={ele.video}
           controls
@@ -86,7 +86,7 @@ const CardsDetails = ({ pricing }) => {
           height="auto"
           style={{ marginBottom: '10px' }}
         />
-      )}
+      )} */}
                      </div>
                       
       
